@@ -6,6 +6,10 @@ Will add disable_polymer=1 to the query string of all YouTube pages. Will work w
 
 Forked from [Old Reddit Redirect](https://github.com/tom-james-watson/old-reddit-redirect)
 
+## Known issues
+
+When YouTube is loaded from a link or URL the page needs to be refreshed before the old version is displayed, clicking links within YouTube doesn't cause this issue.
+
 ## License
 
 Original code copyright Tom Watson. Code released under [the MIT license](LICENSE.txt).
