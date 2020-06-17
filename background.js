@@ -1,23 +1,19 @@
-const oldReddit = "https://old.reddit.com";
+const queryString = "?disable_polymer=1";
 
 chrome.webRequest.onBeforeRequest.addListener(
   function(details) {
-    // Exclude poll pages
-    if (details.url.match(/^https?:\/\/(www\.)*reddit.com\/poll/)) {
-      return;
+    if(details.url.indexOf("?") == -1){
+      return {
+        redirectUrl: details.url + queryString
+      };
+    }else{
+      return {}
     }
-
-    return {
-      redirectUrl:
-        oldReddit + details.url.match(/^https?:\/\/[^\/]+([\S\s]*)/)[1]
-    };
   },
   {
     urls: [
-      "*://reddit.com/*",
-      "*://www.reddit.com/*",
-      "*://np.reddit.com/*",
-      "*://new.reddit.com/*",
+      "*://youtube.com/*",
+      "*://www.youtube.com/*",
     ],
     types: [
       "main_frame",

@@ -1,6 +1,6 @@
 {
-  "name": "Old Reddit Redirect",
-  "description": "Ensure Reddit always loads the old design",
+  "name": "Old YouTube Redirect",
+  "description": "Ensure YouTube always loads the old design",
   "version": "1.1.4",
   "manifest_version": 2,
   "background": {"scripts":["background.js"]},
@@ -11,9 +11,7 @@
   "permissions": [
     "webRequest",
     "webRequestBlocking",
-    "*://reddit.com/*",
-    "*://www.reddit.com/*",
-    "*://np.reddit.com/*",
-    "*://new.reddit.com/*"
+    "*://youtube.com/*",
+    "*://www.youtube.com/*"
   ]
 }
