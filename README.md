@@ -8,6 +8,8 @@ Forked from [Old Reddit Redirect](https://github.com/tom-james-watson/old-reddit
 
 ## Known issues
 
+**This code no longer works for me, I am not aware of any way to switch to the old YouTube layout any more.**
+
 When YouTube is loaded from a link or URL the page needs to be refreshed before the old version is displayed, clicking links within YouTube doesn't cause this issue.
 
 ## License
